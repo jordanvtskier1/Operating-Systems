@@ -54,9 +54,11 @@ int compareCollectibles(Collectible *collectibleOne, Collectible *collectibleTwo
 };
 
 
+// extra credit below
+
 Collectible **buildCollectibleArray(unsigned int numItems, unsigned int *values, unsigned int *weights){
     char name[MAX_NAME_LENGTH];
-    Collectible **array = malloc(numItems * sizeof(Collectible *));
+    Collectible **array = malloc(numItems * sizeof(Collectible)); //allocate memory (I think thats necessary)
     for (unsigned int i = 0; i < numItems; i++){
         sprintf(name,"C%d", i);
         array[i]=createCollectible(name, values[i],weights[i]);
@@ -76,6 +78,10 @@ int compareCollectiblesWrapper(const void *c1p, const void *c2p) {
     return compareCollectibles(c1, c2);
 }
 
+
+/* 
+
+This is my main function for the extra credit
 
 
 int main(){
@@ -102,5 +108,5 @@ int main(){
 
 
 };
-
+*/
 
