@@ -1,0 +1,6 @@
+#ifndef ASSIGNMENT2_LIBRARY_H
+#define ASSIGNMENT2_LIBRARY_H
+
+void hello(void);
+
+#endif //ASSIGNMENT2_LIBRARY_H
